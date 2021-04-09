@@ -11,7 +11,7 @@ def cities_import() -> List[Dict]:
     config = {
         'user': 'root',
         'password': 'root',
-        'host': 'db',
+        'host': '127.0.0.1',
         'port': '3306',
         'database': 'citiesData'
     }
@@ -43,4 +43,4 @@ def cities() -> str:
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(host='127.0.0.1')
